@@ -7,3 +7,8 @@
 #    ans += 1
 #print(ans)
 
+zet = set()
+for obj in objects:
+    if id(obj) not in zet:
+        zet.add(id(obj))
+print(len(zet))
